@@ -1,0 +1,224 @@
+    
+    
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=My+Soul&family=Plus+Jakarta+Sans&family=Rubik+Wet+Paint&family=Teko&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./Components/eggs-7130320_960_720.webp");
+    /* background-image: url("https://cdn.pixabay.com/photo/2022/04/13/13/18/eggs-7130320__340.jpg"); */
+    /* background-image: url("https://cdn.pixabay.com/photo/2021/03/30/08/06/easter-eggs-6136257_960_720.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lobster', cursive;
+}
+.container {
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .app-wrapper {
+    background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 40%;
+    min-width: 450px;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+   
+   
+  }
+  
+   h1 {
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 20px 60px 20px;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .list {
+    width: 110%;
+   margin: 0 auto;
+    background: rgba( 255, 255, 255, 0.55 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11.5px );
+-webkit-backdrop-filter: blur( 11.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    right: 1.5rem;
+
+
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #aaa;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+  }
+  
+  .task-input {
+    width: 350px;
+    min-width: 250px;
+    padding: 15px 10px 10px 20px;
+    margin-right: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    color: white;
+    background-color: #1d222b;
+    border: 1px solid #444;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  .input::placeholder{
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      color: #ccc;
+  }
+  .buttons {
+    display: flex;
+    
+  }
+  
+  .btn {
+    margin: 10px;
+  }
+  
+  .add-task-btn {
+    min-width: 100px;
+    background-color: #A67237;
+    color: white;
+    border: none;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-bottom: 5px;
+  }
+  
+  .list-item span {
+    color:black;
+    margin-left: 2rem;
+    
+  }
+  
+  .task-btn {
+    cursor: pointer;
+    background-color: #A67237;
+    border: none;
+    outline: none;
+    height: 2rem;
+    font-family: 'Lobster', cursive;
+    width: 5rem;
+  }
+  
+  .btn-delete {
+    min-width: 100px;
+    background-color: #A67237;
+    color: white;
+    border: none;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    right: 1.5rem;
+  }
+  
+  .btn-edit {
+    min-width: 100px;
+    background-color: #A67237;
+    color: white;
+    border: none;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    right: 1rem;
+   
+  }
+  
+  .clear-btn {
+    width: 100px;
+    height: 35px;
+    background-color:#A67237;
+    color: white;
+    border: none;
+    font-family: 'Lobster', cursive;
+    font-size: 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+    cursor: pointer;
+    
+  }
+
+  
+  .no-tasks {
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+.add-task-btn:hover,.btn-delete:hover,.btn-edit:hover,.clear-btn:hover{
+    transform: scale(1.1);
+}
